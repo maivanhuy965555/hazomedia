@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>jQuery Countup.js Plugin Demo</title>
+    <meta name="description" content="DESCRIPTIONHERE" />
+    <meta name="author" content="Frontendscript" />
+   
+    <!--Only for demo purpose - no need to add.-->
+    <link rel="stylesheet" type="text/css" href="demo.css" />
+    <style>
+	span.counter {
+    display: block;
+    margin: 10px 0;
+    font-size: 64px;
+    line-height: normal;
+    display: block;
+    background: #b2d0a5;
+    padding: 15px;
+	text-align:center;
+
+}
+	</style>
+</head>
+<body>
+		
+<div class="ScriptTop">
+    <div class="rt-container">
+        <div class="col-rt-4" id="float-right">
+             
+        </div>
+        <div class="col-rt-2">
+            <ul>
+                <li><a href="https://frontendscript.com/demo/javascript-smooth-scroll-to-anchor">Previous Demo</a></li>
+                <li><a href="https://frontendscript.com/jquery-number-counter-on-scroll">Back to the Article</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<header class="ScriptHeader">
+    <div class="rt-container">
+    	<div class="col-rt-12">
+        	<div class="rt-heading">
+            	<h1>jQuery Number Counter On Scroll</h1>
+                <p>Scroll Down To see Effect<br>A simple plugin which Count Number on Scroll</p>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section>
+    <div class="rt-container">
+          <div class="col-rt-12">
+              <div class="Scriptcontent">
+              
+                <div class="counters">
+                    <span class="counter">300</span>
+                    <span class="counter">500</span>
+                    <span class="counter">800</span>
+                </div>
+    
+    		</div>
+		</div>
+    </div>
+</section>
+     
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="jquery.countup.min.js"></script>
+<script>
+$('.counter').countUp();
+</script>
+
+
+    
+	</body>
+</html>

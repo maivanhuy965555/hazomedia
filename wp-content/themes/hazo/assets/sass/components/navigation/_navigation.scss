@@ -1,0 +1,23 @@
+.pagination{
+	text-align: center;
+	margin:20px 0px;
+	li{
+		display: inline-block;
+		padding:0px 2px;
+		a{
+			display: block;
+			font-size: 14px;				
+			text-align: center;
+			padding:7px 15px;
+			border:1px solid #ddd;
+			color: #465363;
+		}
+	}
+	.active{
+		a{
+			border:1px solid $color-005;
+			background-color: $color-005;
+			color: white;
+		}
+	}
+}

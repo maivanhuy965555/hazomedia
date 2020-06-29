@@ -1,0 +1,132 @@
+
+
+/* 1199 */
+
+
+
+@media screen and (max-width: 1199.5px) {
+
+	.full-search .input-search{
+
+		width: 80%;
+
+		margin: 50% auto;
+
+	}
+
+	.full-search .input-search {
+
+		position: relative;
+
+	}
+
+	.full-search .input-search input{
+
+		font-size: 12px;
+
+		width: calc(100% - 0px);
+
+	}
+
+	.full-search .input-search button{
+
+		font-size: 16px;
+
+		width: 70px;
+
+		position: absolute;
+
+		top: 0;
+
+		right: 0;
+
+		border: 0;
+
+	}
+
+	.full-search .times-search{
+
+		top: 20px;
+
+		right: 20px;
+
+	}
+	.header_menu ul li{
+		padding:0px 15px;
+	}
+	.site-banner{
+		margin-top: -85px;
+	}
+	.header_menu ul li{
+		padding:0px 10px;
+	}
+	.header_menu ul li a{
+		font-size: 14px;
+	}
+
+}
+
+
+
+/* 991 */
+
+
+
+@media screen and (max-width: 991.5px) {
+
+	.row-vt{
+
+		width: 100%;
+
+		display: flex;
+
+		flex-flow: row wrap;
+
+		margin: auto;
+
+	}
+
+	.col-vt{
+
+		order: 2;
+
+	}
+
+	.icon-mobile , .search-mobile , .menu-mobile{
+
+		display: block !important;
+
+	}
+	.header_logo img{
+		width: 200px;
+	}
+	.site-customer #portfoliolist .portfolio{
+		flex:0 0 50%;
+		max-width: 50%;
+	}
+	
+
+
+}
+
+
+
+/* 767 */
+
+
+
+@media screen and (max-width: 767.5px) {
+	.site-banner{
+		margin-top: -102px;
+		padding-top: 102px;
+	}
+	.site-customer_item .img-top .btn-custom{
+		min-width: 95%;
+	}
+	.header{
+		padding:0;
+	}
+	.blog img{
+		width: 100%;
+	}
+}

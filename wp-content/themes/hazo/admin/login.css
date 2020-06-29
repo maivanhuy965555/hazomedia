@@ -1,0 +1,84 @@
+/*Login*/
+img{
+    max-width: 100%
+}
+.login h1{
+    padding: 0 24px;
+}
+.login h1 a{
+    background-image: none,url(images/logows247.png);
+    background-size: contain;
+    width: 100%;
+    margin: 0;
+}
+#redux-header{
+    display: none;
+}
+body{
+  background: url(images/bg.png);
+  background-size: inherit;
+  overflow: hidden;
+}
+#login{
+    padding: 20px 20px;
+    background: #fff;
+    position: absolute;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,.5);
+    display: block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.login form .input{
+    height: 40px;
+    border: 1px solid #ebebeb;
+    padding: 0 20px;
+    width: 100%;
+    border-radius: 5px;
+    color: #656565;
+    float: none;
+    font-size: 13px;
+    margin: 10px 0px;
+}
+.login label {
+    color: #4f4f4f;
+    font-size: 15px;
+}
+.wp-core-ui #login .button-primary{
+    margin: 0;
+    padding: 15px 0 !important;
+    color: #fff;
+    border-radius: 3px;
+    border: none;
+    width: 140px;
+    font-size: 14px;
+    line-height: 5px !important;
+    height: 40px !important;
+    background: #009FE3;
+    box-shadow: none;
+    text-shadow: none;
+}
+.login form {
+    border: none;
+    margin-top: 0;
+    box-shadow: none;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.login .privacy-policy-page-link{
+    margin: 20px 0;
+}
+#adminmenuback{
+    background-color: #293949;
+}
+#adminmenu div.wp-menu-image:before {
+    color: #8f939e;
+}
+#adminmenu, #adminmenu .wp-submenu, #adminmenuback, #adminmenuwrap{
+    background-color: #293949;  
+}
+.login .button.wp-hide-pw{
+    top: 50%;
+    transform: translateY(-50%);
+}

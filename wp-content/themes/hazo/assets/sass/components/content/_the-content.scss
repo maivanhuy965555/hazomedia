@@ -1,0 +1,89 @@
+.the_content{
+  h1 , h2 , h3 , h4{
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  h6{
+    font-size:14px;
+  }
+  h5{
+    font-size:16px;
+  }
+  h4{
+    font-size:18px;
+  }
+  h3{
+    font-size:20px;
+  }
+  h2{
+    font-size:24px;
+    line-height: 1.5;
+  }
+  h1{
+    font-size: 30px;
+    line-height: 1.5;
+    color: $color-005;
+  }
+  p{
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    font-size: 16px;
+    b{
+      color: $color-005;
+    }
+  }
+  ul{
+    list-style: disc;
+    padding-left: 18px;
+    padding-bottom: 5px;
+    li{
+      color: #333;
+      line-height: 1.5;
+      margin-bottom: 10px;
+      font-size: 16px;
+      a{
+        color: $color-005;
+      }
+    }
+  }
+  ol{
+    list-style: decimal;
+    padding-left: 18px;
+    padding-bottom: 5px;
+    li{
+      color: #333;
+      line-height: 1.5;
+      margin-bottom: 10px;
+      font-size: 16px;
+      a{
+        color: $color-005;
+      }
+    }
+  }
+  blockquote{
+    padding:10px 20px;
+    margin:0 0 20px;
+    border-left:5px solid #eb2b2d;
+    p{
+      margin:0!important;
+    }
+  }
+  code{
+    background:rgba(0,0,0,.05);
+    border-radius:3px;
+    font-size:.85rem;
+    color:#e83e8c
+  }
+  table>tbody>tr>td,table>tbody>tr>th,table>tfoot>tr>td,table>tfoot>tr>th,table>thead>tr>td,table>thead>tr>th{
+    border:1px solid #ddd;
+    padding:7px 10px
+  }
+  iframe{
+    margin:auto
+  }
+  .syntaxhighlighter{
+    padding:10px 0
+  }
+}

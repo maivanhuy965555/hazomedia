@@ -1,0 +1,122 @@
+// Center block
+@mixin center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// Column width with margin
+@mixin column-width($numberColumns: 3) {
+    width: map-get($columns, $numberColumns) - ( ( $columns__margin * ( $numberColumns - 1)) / $numberColumns);
+}
+
+@mixin from($breakpoint) {
+    // If the breakpoint exists in the map.
+    @if map-has-key($breakpoints, $breakpoint) {
+        // Get the breakpoint value.
+        $breakpoint-value: map-get($breakpoints, $breakpoint);
+        // Write the media query.
+        @media (min-width: $breakpoint-value) {
+            @content;
+        }
+        // If the breakpoint doesn't exist in the map.
+    }
+    @else {
+        // Log a warning.
+        @warn "Invalid breakpoint: #{$breakpoint}.";
+    }
+}
+
+@mixin ratio($width, $height) {
+    position: relative;
+    &::before {
+        content: "";
+        display: block;
+        padding-top: ($height / $width) * 100%;
+        width: 100%;
+    }
+}
+
+
+/*03 Ws247 Mixin */
+
+@mixin custom_title {
+    font-size: $fz-25;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+@mixin custom_background_img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+@mixin custom_radius {
+    border: 0;
+    border-radius: 0;
+}
+
+@mixin custom_flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@mixin custom_visi_hide {
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s;
+}
+
+@mixin custom_visi_block {
+    visibility: visible;
+    opacity: 1;
+    transition: all .3s;
+}
+
+@mixin custom_form_content {
+    height: 40px;
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+@mixin custom_transition {
+    transition: all .3s;
+}
+
+@mixin custom_ba {
+    content: "";
+    position: absolute;
+}
+
+@mixin transition {
+    transition: all .5s;
+}
+
+@mixin owl_custom {
+    .owl-theme .owl-nav.disabled+.owl-dots {
+        margin-top: -50px;
+        position: relative;
+        button {
+            margin: 0px 2.5px;
+            outline: none;
+            span {
+                width: $fz-15;
+                height: $fz-15;
+            }
+        }
+        .active {
+            span {
+                background: $color-333;
+            }
+        }
+    }
+}
+
+// example @include breakpoint(940) { width:80%; }
+@mixin breakpoint($size) {
+    @media only screen and (max-width: $size + px) {
+        @content;
+    }
+}

@@ -1,0 +1,44 @@
+/* Css Style Admin */
+div#widgets-right .sidebars-column-1, div#widgets-right .sidebars-column-2{
+    max-width: 100%!important;
+    width: 100%!important;
+}
+#adminmenu, #adminmenu .wp-submenu, #adminmenuback, #adminmenuwrap {
+    background-color: #3a4b55;
+}
+#adminmenu .wp-has-current-submenu .wp-submenu, #adminmenu .wp-has-current-submenu .wp-submenu.sub-open, #adminmenu .wp-has-current-submenu.opensub .wp-submenu, #adminmenu a.wp-has-current-submenu:focus+.wp-submenu, .no-js li.wp-has-current-submenu:hover .wp-submenu{
+    background-color: rgba(0,0,0,.15);
+}
+#adminmenu a{
+    color: hsla(0,0%,100%,.8);
+    display: block;
+    border-left: 3px solid transparent;
+}
+#adminmenu a:hover{
+    border-left: 3px solid #43b1d6;
+    background-color: #2c3a42;
+}
+#adminmenu div.wp-menu-name {
+    color: #fff;
+}
+#adminmenu div.wp-menu-image:before{
+    color: #fff;
+}
+#wpadminbar{
+    background: #518ca3;
+}
+#wpadminbar #adminbarsearch:before, #wpadminbar .ab-icon:before, #wpadminbar .ab-item:before,#wpadminbar .ab-empty-item, #wpadminbar a.ab-item, #wpadminbar>#wp-toolbar span.ab-label, #wpadminbar>#wp-toolbar span.noticon {
+    color: #fff;
+}
+#wpwrap{
+    background: #eef1f5;
+}
+#wp-admin-bar-vnex{
+    display: none;
+}
+/* Css Logo Webseo247 */
+li#toplevel_page_acf-options-cau-hinh img{
+    width: 20px;
+    padding-top: 7px;
+}
+

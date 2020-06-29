@@ -1,0 +1,209 @@
+
+.footer{
+	background-image: url(../images/icon/bg-ft.png);
+	background-size: cover;
+	background-position: center top;
+	padding-top: 210px;
+	&_list{
+		h3{
+			font-size: 18px;
+			text-transform: uppercase;
+			color: $color-005;
+			margin-bottom: 20px;
+			font-weight: bold;
+		}
+		ul{
+			li{
+				padding-bottom: 10px;
+				&:last-child{
+					padding-bottom: 0;
+				}
+				a{
+					font-size: 16px;
+					color: #333;
+					display: block;
+					line-height: 1.5;
+					&:hover{
+						color: $color-005;
+					}
+				}
+			}
+		}
+	}
+	.mg-b30{
+		margin-bottom:30px;
+	}
+	.logo{
+	}
+	.contact-footer{
+		padding-bottom: 30px;
+	}
+	.form-footer{
+		width: 70%;
+		margin-left: auto;
+		form{
+			position: relative;
+			input{
+				height: 40px;
+			}
+			button{
+				position: absolute;
+				top: 0;
+				right: 0;
+				background:none;
+				outline: none;
+				border:none;
+				font-size: 17px;
+				color: $color-005;
+				padding:0px;
+				width: 50px;
+				height: 40px;
+			}
+		}
+	}
+}
+.ft-bottom{
+	border-top:1px solid #ccc;
+	padding:15px 0px;
+	text-align: center;
+	span{
+		font-size: 14px;
+		color: #333;
+		font-weight: bold;
+	}
+}
+.pp-content-footer{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+	background:rgba(2,2,2,0.4);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	visibility: hidden;
+	opacity: 0;
+}
+.popup {
+	background: linear-gradient(45deg, #d52027 0%, #6f0004 100%);
+	padding: 40px 25px 20px 25px;
+	width: 425px;
+	border-radius: 8px;
+	position: relative;
+	.times{
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		font-size: 30px;
+		color: #fff;
+		z-index: 6;
+		cursor: pointer;
+	}
+	&__title {
+		font-size: 20px;
+		color: #fff;
+	}
+	&__phone {
+		color: #fff;
+		font-size: 30px;
+		display: flex;
+		align-items: center;
+		margin-bottom: 15px;
+		padding-bottom: 15px;
+		border-bottom: 1px solid #ccc;
+		font-weight: bold;
+		a{
+			color: #fff;
+		}
+		img{
+			margin-right: 10px;
+		}
+		i {
+			margin-right: 10px;
+		}
+	}
+	&__reminder {
+		color: #fff;
+		font-size: 16px;
+	}
+	form {
+		input,
+		button {
+			height: auto;
+			padding: 10px 20px;
+			font-size: 18px;
+			color: #7b7b7b;
+			&:focus {
+				outline: none;
+				box-shadow: none;
+			}
+		}
+		input {}
+		select {
+			width: 100%;
+			border-radius: 5px;
+			height: auto;
+			padding: 10px 20px;
+			color: #7b7b7b;
+			&:focus {
+				outline: none;
+			}
+		}
+		.btn-custom {
+			cursor: pointer;
+			height: 40px;
+			background-color: #690e05;
+			color: #fff;
+			border: 1px solid #fff;
+			cursor: pointer;
+			height: 50px;
+			padding: 0px 10px;
+			line-height: 40px;
+			font-size: 15px;
+			text-transform: uppercase;
+			margin:0 auto;
+		}
+		select.form-control:not([size]):not([multiple]){
+			height: 49px;
+			padding:0px 20px;
+		}
+	}
+}
+.active-pp{
+	visibility: visible;
+	opacity: 1;
+}
+
+// Disable arrow in input type number
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type=number] {
+	-moz-appearance: textfield;
+}
+/*# sourceMappingURL=popup.css.map */
+
+
+
+@media screen and (max-width: 1199px) {
+}
+@media screen and (max-width: 991px) {
+	.footer{
+		padding-top: 50px;
+	}
+	.footer .form-footer{
+		width: 100%;
+	}
+	.footer{
+		background-position: inherit;
+	}
+	
+}
+@media screen and (max-width: 767px) {
+	
+}

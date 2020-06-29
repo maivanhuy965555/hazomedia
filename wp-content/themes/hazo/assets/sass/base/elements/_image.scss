@@ -1,0 +1,65 @@
+.image {
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+
+	img,
+	.image__img {
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 1;
+	}
+}
+
+.image--cover {
+	background-size: cover;
+
+	img,
+	.image__img {
+		object-fit: cover;
+	}
+}
+
+.image--contain {
+	background-size: contain;
+
+	img,
+	.image__img {
+		object-fit: contain;
+	}
+}
+
+.image--square {
+
+	@include ratio(1, 1);
+}
+
+.image--rectangle {
+
+	@include ratio(3, 4);
+}
+
+.image--horizontal {
+
+	@include ratio(9, 16);
+}
+
+.image--vertical {
+
+	@include ratio(16, 9);
+}
+
+.image--circle {
+
+	@include ratio(1, 1);
+
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.image--border {
+	border: 1px solid var(--gray);
+}
