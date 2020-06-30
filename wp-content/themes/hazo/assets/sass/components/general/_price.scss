@@ -247,10 +247,261 @@
 	}
 }
 
+// Tên miền
+
+.ten-mien{
+	padding:50px 0px;
+	.table{
+		display: table;
+		thead{
+			background: #0a8de1;
+			color: #fff;
+			font-weight: 700;
+			text-transform: uppercase;
+			font-size: 15px;
+			border-bottom:0;
+			tr{
+				border-bottom:0;
+				th{
+					padding:20px 10px;
+					vertical-align: middle;
+					border-bottom:0;
+					text-align: center;
+				}
+			}
+		}
+		tbody{
+			tr{
+				background-color: rgba(0,0,0,.05);
+				&:nth-child(2n+2){
+					background:#fff;
+				}
+				td{
+					text-align: center;
+					vertical-align: middle;
+					font-size: 15px;
+					color: #333;
+					line-height: 1.5;
+					&:first-child{
+						font-weight: bold;
+						width: 60%;
+					}
+				}
+			}
+		}
+	}
+}
+
+.site-question{
+	padding:50px 0px;
+	background-color: rgba(0,0,0,.05);
+	margin-bottom: 50px;
+	.question-item{
+		padding:15px;
+		background:#Fff;
+		border-radius: 5px;
+		text-align: center;
+		height: 100%;
+		cursor: pointer;
+		transition: all .3s;
+		&:hover{
+			transform:translate(0,-5px);
+			transition: all .3s;
+		}
+		h3{
+			font-size: 15px;
+			color: #555;
+			text-transform: uppercase;
+			margin-top:10px;
+		}
+		.description{
+			display: none;
+		}
+	}
+}
+
+.bang-gia-host{
+	padding:50px 0px;
+	.mg-bot-20{
+		margin-bottom: 20px;
+	}
+	
+}
+.item-bg-custom{
+	background-color: #f5f5f5;
+	padding: 25px 10px;
+	color: #4d4d4d;
+	border-radius: 4px;
+	font-size: 14px;
+	text-align: center;
+	height: 100%;
+	h3{
+		color: #d52027;
+		font-size: 20px;
+		margin-bottom: 15px;
+		font-weight: bold;
+	}
+	ul{
+		margin-bottom: 15px;
+		li{
+			font-size: 14px;
+			color: #4d4d4d;
+			padding:10px 0px;
+		}
+	}
+	span{
+		display: block;
+		font-size: 14px;
+		color: #4d4d4d;
+	}
+	.price{
+		margin:25px 0px;
+		color: #f7941e;
+		font-size: 22px;
+		font-weight: bold;
+	}
+}
+
+.hosting-wrapper{
+	
+	h1{
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 38px;
+		line-height: 1.4;
+		color: #d52027;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	.hosting-intro{
+		padding: 50px 0;
+		background-repeat: no-repeat;
+		background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    min-height: 637px;
+    .hosting-intro-content {
+    	position: relative;
+    	height: 400px;
+    	p{
+    		margin-bottom: 0;
+    	}
+    	p.text-1 {
+    		position: absolute;
+    		top: 6%;
+    		left: 9%;
+    		text-align: right;
+    	}
+    	p.text-2 {
+    		position: absolute;
+    		top: 44%;
+    		left: 6%;
+    		text-align: right;
+    	}
+    	p.text-3 {
+    		position: absolute;
+    		top: 12%;
+    		right: 11%;
+    	}
+    	p.text-4 {
+    		position: absolute;
+    		bottom: 38%;
+    		right: 10%;
+    	}
+    	p.text-5 {
+    		position: absolute;
+    		bottom: 4%;
+    		left: 46%;
+    		span{
+    			display: block;
+    		}
+    		.text-5-title {
+    			text-transform: uppercase;
+    			font-size: 16px;
+    			text-align: center;
+    		}
+    		.text-5-price {
+    			border-bottom: 1px solid #b6cfde;
+    			font-size: 40px;
+    			font-weight: bold;
+    			color: #f8941d;
+    			padding:15px 0px;
+    		}
+    		.text-5-date {
+    			font-size: 16px;
+    			margin-top: 8px;
+    			text-align: right;
+    		}
+    	}
+    }
+	}
+}
+
+.banner-vps{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position:center right;
+	height: 490px;
+	display: flex;
+	align-items: center;
+	.content-vps{
+		h1{
+			font-size: 40px;
+			text-transform: uppercase;
+			font-weight: bold;
+			margin-bottom: 20px;
+			line-height: 1.5;
+			color: #fff;
+		}
+		ul{
+			li{
+				margin-bottom: 20px;
+				position: relative;
+				font-size: 14px;
+				padding-left: 22px;
+				color: #fff;
+				&:before{
+					content: "\f006";
+					font-family: FontAwesome;
+					color: #f8941d;
+					position: absolute;
+					top: 0;
+					left: 0;
+				}
+				&:last-child{
+					margin-bottom: 0;
+				}
+			}
+		}
+		.price-list{
+			padding-top: 20px;
+			display: inline-block;
+			text-align: center;
+			span{
+				display: block;
+				font-size: 18px;
+				color: #fff;
+			}
+			.price{
+				text-align: center;
+				font-size: 30px;
+				font-weight: 700;
+				border-bottom: 1px solid #fff;
+				display: inline-block;
+				color: #fff;
+				margin:15px 0px;
+				padding-bottom: 15px;
+			}
+		}
+	}
+}
 
 @media screen and (max-width: 1199px){
 	.main-price-content .body-benefit .heading-bg ul li .btn-custom{
 		min-width: 100%;
+	}
+	.hosting-wrapper .hosting-intro .hosting-intro-content p.text-5{
+		bottom:20%;
 	}
 }
 @media screen and (max-width: 991px){
@@ -346,8 +597,39 @@
 	.margin-custom-top{
 		display: block !important;
 	}
+	.site-question .question-item img{
+		width: 80px;
+	}
+	.hosting-wrapper .hosting-intro .hosting-intro-content p.text-2{
+		top: 42%;
+		left: -4%;
+	}
+	.hosting-wrapper .hosting-intro .hosting-intro-content p.text-1{
+		top: 3%;
+    left: 4%;
+	}
+	.hosting-wrapper .hosting-intro .hosting-intro-content p.text-3{
+		top: 12%;
+		right: 9%;
+	}
+	.hosting-wrapper .hosting-intro .hosting-intro-content p.text-4{
+		right: 2%;
+	}
+	.banner-vps{
+		background-position: center left;
+	}
 }
 @media screen and (max-width: 767px){
+	.banner-vps{
+		height: auto;
+		padding:30px 0px;
+		text-align: center;
+	}
+	.banner-vps .content-vps ul li:before{
+		position: initial;
+		padding-right: 5px;
+		display: none;
+	}
 	.main-register img{
 		display: none;
 	}
@@ -368,4 +650,90 @@
 	.main-price-content{
 		padding-top: 30px;
 	}
+	.site-question .question-item{
+		height: auto;
+		margin-bottom: 15px;
+	}
+	.hosting-wrapper .hosting-intro{
+		background:none !important;
+	}
+	.hosting-wrapper .hosting-intro .hosting-intro-content p{
+		position: relative !important;
+		left: 0 !important;
+		right: 0 !important;
+		bottom:0 !important;
+		top: 0 !important;
+		text-align: left !important;
+		width: auto;
+		height: auto;
+		margin-bottom: 20px;
+	}
+	.hosting-wrapper .hosting-intro{
+		padding-bottom: 0;
+	}
+	.hosting-wrapper .hosting-intro .hosting-intro-content p.text-5 .text-5-date{
+		text-align: left;
+	}
+	.hosting-wrapper .hosting-intro .hosting-intro-content p.text-5 .text-5-title{
+		text-align: left;
+	}
+	.hosting-wrapper .hosting-intro{
+		min-height: 200px;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .table-responsive,
+  .table-responsive thead,
+  .table-responsive tbody,
+  .table-responsive th,
+  .table-responsive td,
+  .table-responsive tr {
+    display: block;
+  }
+  .table-responsive > thead > tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .table-responsive > tbody > tr {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+  }
+  .table-responsive > tbody > tr:first-child {
+    border-radius: 3px 3px 0 0;
+    border-top: none;
+  }
+  .table-responsive > tbody > tr:last-child {
+    border-radius: 0 0 3px 3px;
+    border-bottom: none;
+  }
+  .table-responsive > tbody > tr td {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    padding-left: 30% !important;
+    width: 100%;
+    overflow: hidden;
+  }
+  .table-responsive > tbody > tr td:before {
+    content: attr(data-title);
+    position: absolute;
+    top: 15px;
+    left: 14px;
+    width: 30%;
+    padding-right: 10px;
+    white-space: nowrap;
+    font-size: 14px;
+  }
+  .table-responsive.table-order > tbody > tr:nth-child(-n + 3) > td:first-child {
+    padding: 25px 0 25px 30% !important;
+    background-position: left 32% center;
+  }
+  .table-responsive.table-order > tbody > tr:nth-child(-n + 3) > td:first-child span {
+    left: 32%;
+  }
+  .ten-mien .table tbody tr td:first-child{
+  	width: 100%;
+  }
 }
